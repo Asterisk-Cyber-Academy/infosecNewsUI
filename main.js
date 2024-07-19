@@ -15,13 +15,13 @@ const populateNews = (news) => {
       _(`.card-${info.id}`, 'div', {'class': `row g-0 card-row-${info.id}`}, '');
       _(`.card-row-${info.id}`, 'div', {'class': `col-md-4 card-col-${info.id}`}, '');
       _(`.card-col-${info.id}`, 'div', {'class': `d-flex align-items-center card-img-alignment-${info.id}`, 'style': 'height: 100%;'}, '');
-      _(`.card-img-alignment-${info.id}`, 'img', {'class': `img-fluid rounded-start img-${info.id}`, 'src': info.image, 'style': 'border-radius: 10px;'}, '');
+      _(`.card-img-alignment-${info.id}`, 'img', {'class': `img-fluid rounded-start img-${info.id}`, 'src': info.image, 'style': 'border-radius: 10px; margin: 20px;'}, '');
       _(`.card-row-${info.id}`, 'div', {'class': `col-md-8 card-col-${info.id}-2`}, '');
       _(`.card-col-${info.id}-2`, 'div', {'class': 'card-body'}, '');
       _(`.card-col-${info.id}-2`, 'h5', {'class': 'card-title'}, title);
       _(`.card-col-${info.id}-2`, 'h6', {'class': 'card-subtitle mb-2 text-muted fw-light fst-italic'}, date);
       _(`.card-col-${info.id}-2`, 'hr', {}, '');
-      _(`.card-col-${info.id}-2`, 'p', {'class': 'card-text'}, desc);
+      _(`.card-col-${info.id}-2`, 'p', {'class': 'card-text', 'style': 'margin: 20px;'}, desc);
       _(`.card-col-${info.id}-2`, 'a', {'class': 'card-link', 'href': link, 'target': '_blank'}, "Source");
       _(`.card-col-${info.id}-2`, 'br', {}, '');
       _('.container', 'br', {}, '');
@@ -31,7 +31,7 @@ const populateNews = (news) => {
       // _(`.card-${info.id}`, 'h6', {'class': 'card-subtitle mb-2 text-muted'}, date);
       _(`.card-${info.id}`, 'h6', {'class': 'card-subtitle mb-2 text-muted fw-light fst-italic'}, date);
       _(`.card-${info.id}`, 'hr', {}, '');
-      _(`.card-${info.id}`, 'p', {'class': 'card-text'}, desc);
+      _(`.card-${info.id}`, 'p', {'class': 'card-text', 'style': 'margin: 20px;'}, desc);
       _(`.card-${info.id}`, 'a', {'class': 'card-link', 'href': link, 'target': '_blank'}, "Source");
       _(`.card-${info.id}`, 'br', {}, '');
       _('.container', 'br', {}, '');
