@@ -44,7 +44,7 @@ const fetchNews = async () => {
   _('.container', 'div', {'class': `spinner-div d-flex align-items-center justify-content-center`}, '');
   _('.spinner-div', 'div', {'class': `spinner-border text-light`, 'role': 'status', 'style': 'width: 5rem; height: 5rem;'}, '');
   _('.spinner-border', 'span', {'class': `visually-hidden`}, 'Loading..');
-  let resp = await fetch('http://127.0.0.1:44444/news');
+  let resp = await fetch('/news');
   let news = await resp.json();
   if ( news['news'].length ) {
     populateNews(news['news']);
