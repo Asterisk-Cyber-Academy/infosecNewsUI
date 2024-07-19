@@ -15,7 +15,7 @@ const populateNews = (news) => {
       _(`.card-${info.id}`, 'div', {'class': `row g-0 card-row-${info.id}`}, '');
       _(`.card-row-${info.id}`, 'div', {'class': `col-md-4 card-col-${info.id}`}, '');
       _(`.card-col-${info.id}`, 'div', {'class': `d-flex align-items-center card-img-alignment-${info.id}`, 'style': 'height: 100%;'}, '');
-      _(`.card-img-alignment-${info.id}`, 'img', {'class': `img-fluid rounded-start img-${info.id}`, 'src': info.image}, '');
+      _(`.card-img-alignment-${info.id}`, 'img', {'class': `img-fluid rounded-start img-${info.id}`, 'src': info.image, 'style': 'border-radius: 10px;'}, '');
       _(`.card-row-${info.id}`, 'div', {'class': `col-md-8 card-col-${info.id}-2`}, '');
       _(`.card-col-${info.id}-2`, 'div', {'class': 'card-body'}, '');
       _(`.card-col-${info.id}-2`, 'h5', {'class': 'card-title'}, title);
